@@ -44,7 +44,7 @@ export default function ScrollAbout({children}:{children: React.ReactNode}){
             <p className={styles.p2}>Front-end development</p>
             <p className={styles.p3}>amrahaanwar@gmail.com</p>
             <p className={styles.p4}>+1234-5678910</p>
-            <p className={styles.p5}>somewhere in Karachi, Pakistan</p>
+            <p className={styles.p5}>Somewhere in Karachi, Pakistan</p>
         </div>
     </div>
     <button className={styles.download_btn}>DOWNLOAD CV</button>
@@ -72,7 +72,7 @@ export default function ScrollAbout({children}:{children: React.ReactNode}){
             <p className={styles.p2}>Front-end development</p>
             <p className={styles.p3}>amrahaanwar@gmail.com</p>
             <p className={styles.p4}>+1234-5678910</p>
-            <p className={styles.p5}>somewhere in Karachi, Pakistan</p>
+            <p className={styles.p5}>Somewhere in Karachi, Pakistan</p>
         </div>
     </div>
     <button className={styles.download_btn}>DOWNLOAD CV</button>
