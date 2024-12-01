@@ -22,15 +22,28 @@
     display: none;
 }
 .centerdiv{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+    gap: 50vh;
 }
+
 .profile{
-    width: 13rem;
-    height: 13rem;
+    width: 70vw;
+    height: 70vw;
     margin-top: 6rem;
     border-radius: 50%;
     box-shadow: 5px 5px 15px black;
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
+    object-fit: cover;
 }
 .sm{
     text-align: center;
@@ -54,13 +67,18 @@
     font-family:serif;
 }
 .btn{
-    margin-left: 30px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 30px; */
     margin-top: 30px;
 }
 
 .btnlink{
     text-decoration: none;
     color:white;
+    cursor: pointer;
 }
 .btn1{
     background-color: #f1b409;
@@ -83,7 +101,7 @@
     display: none;
 }
 /* mobile screen */
-@media (min-width:420px){
+/* @media (min-width:420px){
     .profile{
         width: 16rem;
         height: 16rem;
@@ -107,20 +125,23 @@
         font-size: 3rem;
     }
     
-}
+} */
 
 @media (min-width: 640px){
+    .navbar{
+        flex-direction: row;
+        gap: 0;
+    }
     .leftcontainer{
         display: block;
-        background-color: white;
         width: 50%;
-        height:34.5rem;
+        height: 50vh;
     }
     .rightcontainer{
         display: block;
         background-color: #f1b409;
         width: 50%;
-        height:34.5rem;
+        height: 50vh;
     }
     .centerdiv{
         display: none;
@@ -153,7 +174,9 @@
 }
     .btn{
     margin-top:-12rem;
-    margin-left:25px
+    margin-left:25px;
+    justify-content: left;
+    
 }
     .copyright{
         display: block;
@@ -236,7 +259,7 @@
     }
 }
 
-@media (min-width:1024px){
+/* @media (min-width:1024px){
     .leftcontainer{
         height: 34.6rem;
     }
@@ -273,14 +296,17 @@
         font-size:11px;
         margin:4rem 22rem 20px -11rem;
     }
-}
+} */
 
-@media (min-width:1136px){
+@media (min-width:1024px){
     .leftcontainer{
-        height: 40rem;
+        height: 100vh;
     }
     .rightcontainer{
-        height: 40rem;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .name{
         font-size: 5rem;
@@ -293,17 +319,23 @@
     .btn{
         margin-top: -12rem;
         margin-left: 8rem;
+        justify-content: left;
     }
     .copyright{
         font-size: 12px;
         margin: 5rem 22rem 20px -25rem;
     }
     .profile{
-        width: 37rem;
-        height: 37rem;
+        width: 85vh;
+        height: 85vh;
         margin-top: 2rem;
         border-radius: 50%;
         box-shadow: 10px 10px 15px black;
         margin-left: 3rem;
     }
+    .navbar{
+        flex-direction: row;
+        gap: 0;
+    }
+
 }
